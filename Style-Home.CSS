@@ -1,0 +1,84 @@
+header{
+    /*background-color:black;
+    color: darkgray; */
+    padding: 20px 0;
+   
+
+}
+.Encabezado{
+    position: relative;
+width: 940px;
+margin:0 auto;
+}
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: currentColor;
+}
+
+body{
+    background-color: aliceblue;
+    /*padding: 0 30px; esto era lo que me poniua un margemn en la pagina y hacia que quedara un espacio*/
+    
+    
+    }
+    .principal{
+        width: 100%;
+        padding: 3em 0;
+        background-color: lightgreen;
+       ;
+    }
+    .inicio{  
+        display: flex; 
+        margin: 3em auto ;
+        width: 328px;
+        height: 67px;
+        
+       
+    }
+    .palabra{
+        display: flex;
+        margin: 3em auto ;
+        width: 328px;
+        height: 67px;
+      
+    }
+
+footer{
+    font-size: small;
+    text-align: center;
+    padding: 40px;
+   }
+   .nombre{
+    
+    font-style: italic;
+    font-weight: bolder;
+   }
+nav{
+    position: relative;
+    margin: 1px auto;
+    
+   }
+   
+  
+   nav li{
+       display: inline;
+       margin: 0 0 0 15px;
+   }
+   nav a{
+       text-transform: uppercase;
+        color: aliceblue;
+       font-weight: bold;
+       font-size: 22px;
+       text-decoration: none;
+   }
+   nav a:hover{
+       color: blue;
+       text-decoration: underline;
+   }
+   .github, .in{
+    width: 50px;
+    height: 50px;
+   }
+   
