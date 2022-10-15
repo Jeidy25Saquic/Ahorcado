@@ -20,18 +20,18 @@ h1{
     
     padding: 0 3em ;
 }
-.titulo{
+.titulo3{
     text-align: center;
     font-weight: bold;
     font-size: 2em;
     /*color: rgb(179, 228, 175);*/
-    color: lime;
+    color: blue;
  text-decoration: double;
 }
 
-body{
+.body3{
    /* background-color:lightgoldenrodyellow;*/
-   background: linear-gradient(rgba(5,7,12,0.30), rgba(5,7,12,0.30)),url(imagenes/personita.jpg);
+   background: linear-gradient(plum, palevioletred, purple);
     
 
     }
@@ -41,17 +41,42 @@ body{
         padding: 3em 0;
        
     }
+    textarea:focus{
+        outline: none
+    }
+    
+    #ingresoPalabra{
+        
+   
+    
+    width: 577px;
+    left: 240px;
+    top: 168px;
+    border-radius: nullpx;
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: transparent;
+        resize: none;
+        border: none;
+    
+    }
+    
     .botones{
         text-decoration: none;
         text-align: center;
        }
-    .inicio{  
-        display: flex; 
+    .guardar{  
+       
         margin: 3em auto ;
         width: 330px;
         height: 67px;
         border-radius: 24px;
-        padding:  20px 90px;
+        padding:  1em 50px;
        /* background-color: #1ACF6E;*/
       
         border-color:  rgb(179, 228, 175);
@@ -63,13 +88,13 @@ body{
         
        
     }
-    .palabra{
-        display: flex;
+    .salir{
+       
         margin: 3em auto ;
         width: 275px;
         height: 67px;
         border-radius: 24px;
-        padding:  1em 12px;
+        padding:  1em 80px;
       
         color: green;
         border-color:rgb(179, 228, 175);
@@ -77,13 +102,13 @@ body{
        font-weight: bold;
       
     }
-    .palabra:active,.inicio:active{
+    .guardar:active,.salir:active{
         color: lime;
         background-color: lightcyan;
     }
     
     
-    .palabra:hover, .inicio:hover{
+    .guardar:hover, .salir:hover{
         transform: scale(1.05);
         
     }
@@ -100,7 +125,7 @@ footer{
     font-style: italic;
     font-weight: bolder;
     font-size: x-small;
-   color: blue;
+    color: blue;
     padding: 10px 30px;
    }
 nav{
@@ -138,22 +163,24 @@ nav{
     nav{
         position: static;
     }
-     .principal,.footer, .Encabezado{
+     #principal,.footer, .Encabezado{
     width: auto;
     }
-  .inicio{
-    padding:  20px 80px;
- 
-  }
-  .palabra{
-    padding: 20px 30px;
-  }
-
-    .inicio, .palabra{
-        width: 80%;
-        
-    }
-    footer{
+    #ingresoPalabra{
+       margin: 15px 10px;
+       padding: 15px 70px;
+        width: 300px;
+      }
+      footer{
         margin: 3em auto;
       }
+ 
+      .guardar, .salir{
+        width: 80%;
+        margin: 1em auto;
+        
+    }
+    .guardar´{
+        padding: 5px 5px;
+    }
 }

@@ -7,12 +7,24 @@
     <meta name="viewport" content="width=device-width">
     <title>Ahorcado-Alura</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href ="Style-Home.CSS">   
+    <link rel="stylesheet" href ="Style-Home.CSS">  
+    <link rel="stylesheet" href ="Style-Play.CSS">  
+    <link rel="stylesheet" href ="Style-word.CSS">  
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+   
 </head> 
+
+<body>
 <header>
     <div class="Encabezado">
         <h1> <img src="imagenes/Vector.png"> </h1>
-        <p class="titulo"> Ahorcado-Alura</p>
+        <p class="titulo">Ahorcado Alura</p>
+
+      
+        
     </div>
 
 </header>
@@ -20,18 +32,52 @@
 
 
 
-<main>
- <body>
-     <section class="pricipal">
-        <button class="inicio" onclick="iniciar()"> Iniciar Juego  </button>
-        <button class="palabra" onclick="nuevaPalabra()"> Agregar nueva palabra</button>
+<main class="principal">
+    
+     <section  class="front" id="botones">
+        <button  class="inicio" onclick="iniciarJuego()" >Iniciar Juego</button> 
+        <button class="palabra" onclick="nuevaPalabra()"> Agregar Nueva Palabra</button>
+      
 
 
      </section>
 
- </body>
+     <section class=" ahorcadoEspacio" >
+    <canvas width="500" height="400"> </canvas>
+     <p id="partidaPerdida">¡uy!... Perdiste Intentalo de nuevo</p>
+     <p id="Perdida"> La palabra correcta es :</p>
+     <p id="partidaGanada">¡excelente!... Haz acertado todas</p>
 
 
+    <div >
+        <p id="mostrarPalabras"></p>
+ 
+    </div>
+
+    <div >
+      <p id="mostrarLetrasUsadas"></p>
+      </div>
+
+      <div class="botones">
+        <button class="reinicio" onclick="nuevoJuego()" >Nuevo Juego </button>
+        <button class="desistir"  onclick="desistir()">Desistir </button>
+       
+      </div>
+   
+ </section>
+   
+ <section class="nuevaPalabra">
+
+    <textarea  id="ingresoPalabra" cols="50" rows="5" placeholder="INGRESA UNA PALABRA"></textarea>
+    <div>
+    <button class="guardar" onclick="Guardar()" >Guardar y Continuar </button>
+    <button class="salir"  onclick="salida()">Cancelar </button>
+</div>
+
+
+ </section>
+
+    
 </main>
 <footer>
 
@@ -46,4 +92,8 @@
         </nav>
 
 </footer>
+<script src="Ahorcado.js"></script> 
+
+</body>
+
 </html>

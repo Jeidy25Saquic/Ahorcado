@@ -1,0 +1,195 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+}
+header{
+    /*background-color:black;
+    color: darkgray; */
+    padding: 20px 0;
+   
+
+}
+.Encabezado2{
+    position: relative;
+width: 940px;
+}
+
+.titulo2{
+   
+   
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: #218359;
+    
+    
+}
+
+
+.fondo{
+
+   /* background-color:lightgoldenrodyellow;*/
+   background: linear-gradient(#81d3ba	, lightblue,#35D4A4  );
+  
+   
+    }
+ .Ahorcado{
+
+ }
+ 
+    .principal{
+        width: 100%;
+        padding: 1em 0;
+   
+        text-align: center;
+       
+    } 
+    .principal p{
+        display: inline-block;
+        padding: 15px 0.5em;
+    }
+    canvas{
+       
+        width: 400px;
+        height: 500px;
+       
+    }
+    #partidaPerdida{
+        width: 150px;
+        height: 70px;
+        background-color: whitesmoke;
+        color: brown;
+        border-radius: 20px;
+        border-color: blanchedalmond;
+    }
+    #partidaGanada{
+        width: 150px;
+        height: 70px;
+        background-color: whitesmoke;
+        color: green;
+        border-radius: 20px;
+        border-color: blanchedalmond;
+    }
+
+    .hidden{
+       color: transparent;
+        text-decoration: underline;
+       
+        text-decoration-color: burlywood;
+    }
+    .letter{
+       text-decoration: underline;
+       text-decoration-color: brown;
+      
+     
+    }
+    #mostrarPalabras{
+       
+        
+         color:violet;
+         font-size: xx-large;
+        text-decoration: line-through;
+
+    }
+    #mostrarLetrasUsadas{
+      
+    color: coral;
+      margin: 1em 0;
+    }
+    .reinicio{  
+      
+ margin-top: 0%;
+        width: 325px;
+        height: 60px;
+        border-radius: 24px;
+        padding:  10px 90px;
+     /*   background-color:  rgb(179, 228, 175);
+        border-color:  rgb(179, 228, 175);*/
+        background-color:#1ACF6E	;
+        font-weight: bold;
+        color: black;
+        font-style: inherit;
+        
+       
+    }
+    .desistir{
+       
+        width: 325px;
+        height: 60px;
+        padding:  10px 12px;
+        color: black;
+        border-color: #b9c1b2;
+        /*background-color: rgb(236, 222, 175);*/
+        background-color: #78E7AB;
+        font-weight: bold;
+        border-radius: 24px;
+        font-style: inherit;
+        margin-top: 2em;
+    }
+
+    
+footer{
+    font-size: small;
+    text-align: center;
+    padding: 40px;
+ 
+   
+   }
+   .nombre2{
+    
+    font-style: italic;
+    font-weight: bolder;
+    font-size: x-small;
+    color:blue;
+    padding: 10px 30px;
+   }
+nav{
+    position: relative;
+    margin: 1px auto;
+    
+   }
+   
+  
+   nav li{
+       display: inline;
+       margin: 0 0 0 15px;
+   }
+   nav a{
+       text-transform: uppercase;
+        color: aliceblue;
+       font-weight: bold;
+       font-size: 22px;
+       text-decoration: none;
+   }
+   nav a:hover{
+       
+       text-decoration: underline;
+   }
+   .github, .in{
+    width: 30px;
+    height: 30px;
+   }
+   
+   @media screen and (max-width:480px) {
+    h1{
+        text-align:center;
+    }
+    
+    nav{
+        position: static;
+    }
+    
+     .principal,.footer, .Encabezado{
+    width: auto;
+    }
+  
+  canvas{
+    width: 50;
+    height: 70;
+    
+  }
+  #mostrarPalabras{
+    font-size: medium;
+  }
+    
+}
